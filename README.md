@@ -23,11 +23,31 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 
 # CHEAT SHEET (stuff I actually use)
 
-NORMAL mode:
-1) File commands: `:w` to save/write the file and find syntax errors; `:wq` to save and then quit (close the window) - this only applies to the current window, not to all open files inside Vim.
+##NORMAL mode:
+
+1) File commands: `:w` to save/write the file and find syntax errors; `:wq` to save and then quit (close the window), `:q!` to quit without saving changes. These only apply to the current window, not to all open files inside Vim.
+
 2) `/{stuff}` searches the file for all instances of `{stuff}` and highlights them all. Once that is done, you can type `N` or `n` to jump around all these instances (backwards and forwards, respectively). To turn the highlighting off again, type `\ ` - that's <backslash><spacebar>.
+
 2) Jumping around:
   * `$` jumps to end of line, `0` jumps to beginning of line
   * `W`/`w` jumps to next word, `B`/`b` jumps to previous word
   * `{line number}G` jumps to a specific line number, or `G` by itself goes to end of file
 
+4) Delete a whole line with `dd` or delete {x} lines with `d{x}<c-r>`
+
+##VISUAL mode:
+
+1) To de-indent or indent highlighted lines, `<` or `>` respectively.
+
+2) Use all the jumping around commands from NORMAL mode to quickly highlight what you need
+
+3) You can access the system clipboard for cutting, copying, or pasting-over using the usual Command-x, Command-c, Command-v (on a Mac). To paste in a brand new chunk of text rather than overwriting existing text, it is better to enter INSERT mode to get the cursor placed correctly and then use Command-V.
+
+##EMMET
+
+Emmet (aka Zen Coding) is a system for writing cumbersome chunks of HTML very efficiently. Emmet shortcuts can be used in any file with a *.html extension.
+
+See the [Emmet cheatsheet](http://docs.emmet.io/cheat-sheet/).
+
+To implement inside Vim, write out the Emmet shortcut (i.e. `html:5>table>th>td*6^tr*5>td*6`) in INSERT mode. Then hit <esc>, the Escape key, to enter NORMAL mode. Make sure the cursor is covering the last character of your Emmet shortcut. Then hit <tab>, the Tab key. Done! If you don't like it, Command-z to undo it and try again.
