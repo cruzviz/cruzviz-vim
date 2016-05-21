@@ -14,7 +14,7 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 3) VISUAL mode is for selecting text. From NORMAL mode, type `v` (visual) to enter VISUAL mode, with your current location as the starting point. Once you hit `v` and start moving the cursor around, you are highlighting everything in between the starting point and the cursor.
 
 ## Initial set-up
-* Install a nice modern graphical version of vim. gVim for Windows, MacVim for Mac. I use MacVim.
+* Install a nice modern graphical version of vim. gVim for Windows, MacVim for Mac. I use MacVim, which is `mvim` from the terminal. I'm pretty sure gVim works the same way but is called `gvim` at the terminal.
   * `mvim {new filename}` entered at a terminal window opens a new file inside MacVim at the present working directory.
   * `mvim {existing filename}` opens an existing file for editing inside MacVim. More often I will just double-click the file in Finder, since I've set up most of my code files to use MacVim as the default program. For HTML files, I have to right-click and 'Open with..' MacVim.
   * For example, `mvim .vimrc` from the directory containing .vimrc will open the .vimrc file inside MacVim. The terminal is necessary to use for hidden files, or directories that the Finder won't let you see.
