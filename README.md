@@ -1,8 +1,8 @@
 # cruzviz-vim
 
-I use MacVim for web development (HTML/CSS/JavaScript) and Python coding. This is the .vimrc file I use to make it pretty and more IDE-like. I use a graphical version of vim (MacVim) and a combination of vim shortcuts (`:w` to save, `:wq` to save and quit, etc.) and Mac standards (Command-x to cut, Command-v to paste, etc.). I'm really not a wizard with Vim and vi commands, I slowly learn new shortcuts here and there, and am nowhere near using them all. This README documents what I do know and try to use.
+I use MacVim for web development (HTML/CSS/JavaScript) and Python coding. This is the .vimrc file I use to make it pretty and more IDE-like.
 
-I am sharing the vimrc and this README for two reasons: 1) in case it helps anybody else, especially beginners, and 2) for my future self, because I forget how to do anything in vim if I stop using it for a few months, and I will surely have to install it on a new machine someday, which I need to remember how to do.
+I'm really not a wizard with Vim and vi commands, I slowly learn new shortcuts here and there, and am nowhere near using them all. This README documents what I do know and try to use. I am sharing the vimrc and this README for two reasons: 1) in case it helps anybody else, especially beginners, and 2) for my future self, because I forget how to do anything in vim if I stop using it for a few months, and I will surely have to install it on a new machine someday, which I need to remember how to do.
 
 ## Getting started with Vim - the super basic basics
 Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
@@ -22,11 +22,12 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 * Make sure the .vimrc file resides in your home directory, otherwise it won't be used. This is usually the default directory when you open a new terminal. On my MacBook, it's the directory `/Users/<myusername>`, which contains Applications, Desktop, and Documents, among others. This directory isn't actually accessible through the Finder, you need to use a terminal, xterm or command prompt of some kind to get here.
 
 # CHEAT SHEET (stuff I actually use)
-* NORMAL mode:
-    1) File commands: `:w` to save/write the file and find syntax errors; `:wq` to save and then quit (close the window) - this only applies to the current window, not to all open files inside Vim.
-    2) `/{stuff}` searches the file for all instances of `{stuff}` and highlights them all. Once that is done, you can type `N` or `n` to jump around all these instances (backwards and forwards, respectively). To turn the highlighting off again, type `\ ` - that's <backslash><spacebar>.
-    2) Jumping around:
-        * `$` jumps to end of line, `0` jumps to beginning of line
-        * `W`/`w` jumps to next word, `B`/`b` jumps to previous word
-        * `{line number}G` jumps to a specific line number, or `G` by itself goes to end of file
-    2) 
+
+NORMAL mode:
+1) File commands: `:w` to save/write the file and find syntax errors; `:wq` to save and then quit (close the window) - this only applies to the current window, not to all open files inside Vim.
+2) `/{stuff}` searches the file for all instances of `{stuff}` and highlights them all. Once that is done, you can type `N` or `n` to jump around all these instances (backwards and forwards, respectively). To turn the highlighting off again, type `\ ` - that's <backslash><spacebar>.
+2) Jumping around:
+  * `$` jumps to end of line, `0` jumps to beginning of line
+  * `W`/`w` jumps to next word, `B`/`b` jumps to previous word
+  * `{line number}G` jumps to a specific line number, or `G` by itself goes to end of file
+
