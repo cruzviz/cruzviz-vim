@@ -58,6 +58,6 @@ To implement inside Vim:
 
 1) Write out the Emmet shortcut (i.e. `html:5>table>th>td*6^tr*5>td*6`) in INSERT mode.
 
-2) Then hit <esc>, the Escape key, to enter NORMAL mode.
+2) Then hit `<esc>`, the Escape key, to enter NORMAL mode.
 
-3) Make sure the cursor is covering the last character of your Emmet shortcut. Then hit <tab>, the Tab key. Done! If you don't like it, Command-z to undo it and try again.
+3) Make sure the cursor is covering the last character of your Emmet shortcut. Then hit `<tab>`, the Tab key. Done! If you don't like it, Command-z to undo it and try again.
