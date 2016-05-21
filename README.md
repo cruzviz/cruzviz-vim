@@ -4,6 +4,8 @@ I use MacVim for web development (HTML/CSS/JavaScript) and Python coding. This i
 
 I'm really not a wizard with Vim and vi commands, I slowly learn new shortcuts here and there, and am nowhere near using them all. I still use all the standard Mac system commands like Command-z, Command-c, and Command-v for undo, copy, and paste inside Vim. This README documents what I do know and try to use. I am sharing the vimrc and this README for two reasons: 1) in case it helps anybody else, especially beginners, and 2) for my future self, because I forget how to do anything in vim if I stop using it for a few months, and I will surely have to install it on a new machine someday, which I need to remember how to do.
 
+[Note to self:] My next to-do items to get more out of Vim: 1) figure out and actually use NERDtree to navigate my file system from inside Vim (it's installed but I don't use it, I just use the MacVim GUI, the Mac Finder, and/or terminal); and 2) start using split layouts and keeping Vim full screen (I currently keep each file in its own window, and I find myself clicking/dragging/resizing all my different Vim windows quite a bit when I work with on more complex projects). If I had both of these items figured out, I could use keyboard shortcuts within Vim to very quickly jump around between and open/close multiple files in various directories, and keep everything visually organized so I could see all my source files at once.
+
 ## Getting started with Vim - the super basic basics
 Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 
