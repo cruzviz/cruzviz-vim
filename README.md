@@ -29,7 +29,7 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 
 1) File commands: `:w` to save/write the file and find syntax errors; `:wq` to save and then quit (close the window), `:q!` to quit without saving changes. These only apply to the current window, not to all open files inside Vim.
 
-2) `/{stuff}` searches the file for all instances of `{stuff}` and highlights them all. Once that is done, you can type `N` or `n` to jump around all these instances (backwards and forwards, respectively). To turn the highlighting off again, type `\ ` - that's <backslash><spacebar>.
+2) `/{stuff}` searches the file for all instances of `{stuff}` and highlights them all. Once that is done, you can type `N` or `n` to jump around all these instances (backwards and forwards, respectively). To turn the highlighting off again, type `\ ` - that's backslash followed by the spacebar.
 
 2) Jumping around:
   * `$` jumps to end of line, `0` jumps to beginning of line
