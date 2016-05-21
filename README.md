@@ -15,8 +15,10 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 
 ## Initial set-up
 * Install a nice modern graphical version of vim. gVim for Windows, MacVim for Mac. I use MacVim.
-  * `mvim {new filename}` entered at a terminal window opens a new file inside MacVim. `mvim .vimrc` from the directory containing .vimrc will open the .vimrc file inside MacVim.
-* I set the font vim uses to be [Hack](http://sourcefoundry.org/hack/), so that font needs to be installed on your system beforehand.
+  * `mvim {new filename}` entered at a terminal window opens a new file inside MacVim at the present working directory.
+  * `mvim {existing filename}` opens an existing file for editing inside MacVim. More often I will just double-click the file in Finder, since I've set up most of my code files to use MacVim as the default program. For HTML files, I have to right-click and 'Open with..' MacVim.
+  * For example, `mvim .vimrc` from the directory containing .vimrc will open the .vimrc file inside MacVim. The terminal is necessary to use for hidden files, or directories that the Finder won't let you see.
+* I set the font vim uses to be [Hack](http://sourcefoundry.org/hack/), so that font needs to be installed on your system beforehand. Feel free to chance the font if you want, it's the last line of .vimrc.
 * Install all the Vundle plug-ins by typing `:PluginInstall<return>` in NORMAL mode (from inside the open .vimrc file).
 * Install any popular linters you might need for the type of coding you do (such as `pylint` for Python) and make sure they are accessible (i.e. in your $PATH). [Syntastic](https://github.com/scrooloose/syntastic) does syntax checking using external system-installed linters. Read the FAQ at the Syntastic GitHub site if you're having problems. If everything is working correctly, you should see some errors appear when you save (`:w`) a code file with improper syntax - for example, saving a *.py file which has some PEP8 violations - which then disappear after you fix the errors and re-save.
 * Make sure the .vimrc file resides in your home directory, otherwise it won't be used. This is usually the default directory when you open a new terminal. On my MacBook, it's the directory `/Users/<myusername>`, which contains Applications, Desktop, and Documents, among others. This directory isn't actually accessible through the Finder, you need to use a terminal, xterm or command prompt of some kind to get here.
@@ -31,16 +33,18 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 
 2) Jumping around:
   * `$` jumps to end of line, `0` jumps to beginning of line
-  * `W`/`w` jumps to next word, `B`/`b` jumps to previous word
-  * `{line number}G` jumps to a specific line number, or `G` by itself goes to end of file
+  * `W`/`w` jumps to next word, `B`/`b` jumps 'b'ack to previous word
+  * `{line number}G` jumps ('G'Os) to a specific line number, or `G` by itself goes to end of file
 
-4) Delete a whole line with `dd` or delete {x} lines with `d{x}<c-r>`
+4) Delete a whole line with `dd` or 'd'elete {x} lines with `d{x}<c-r>`
+
+5) `r{new character}` 'r'eplaces a single character. It overwrites the character underneath the cursor with the {new character}.
 
 ##VISUAL mode:
 
-1) To de-indent or indent highlighted lines, `<` or `>` respectively.
+2) Use all the jumping around commands from NORMAL mode to quickly highlight what you need.
 
-2) Use all the jumping around commands from NORMAL mode to quickly highlight what you need
+1) To de-indent or indent highlighted lines, `<` or `>` respectively.
 
 3) You can access the system clipboard for cutting, copying, or pasting-over using the usual Command-x, Command-c, Command-v (on a Mac). To paste in a brand new chunk of text rather than overwriting existing text, it is better to enter INSERT mode to get the cursor placed correctly and then use Command-V.
 
@@ -50,4 +54,10 @@ Emmet (aka Zen Coding) is a system for writing cumbersome chunks of HTML very ef
 
 See the [Emmet cheatsheet](http://docs.emmet.io/cheat-sheet/).
 
-To implement inside Vim, write out the Emmet shortcut (i.e. `html:5>table>th>td*6^tr*5>td*6`) in INSERT mode. Then hit <esc>, the Escape key, to enter NORMAL mode. Make sure the cursor is covering the last character of your Emmet shortcut. Then hit <tab>, the Tab key. Done! If you don't like it, Command-z to undo it and try again.
+To implement inside Vim:
+
+1) Write out the Emmet shortcut (i.e. `html:5>table>th>td*6^tr*5>td*6`) in INSERT mode.
+
+2) Then hit <esc>, the Escape key, to enter NORMAL mode.
+
+3) Make sure the cursor is covering the last character of your Emmet shortcut. Then hit <tab>, the Tab key. Done! If you don't like it, Command-z to undo it and try again.
