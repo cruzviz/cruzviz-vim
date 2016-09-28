@@ -67,3 +67,21 @@ To implement inside Vim:
 3) Make sure the cursor is covering the last character of your Emmet shortcut. Then hit `<tab>`, the Tab key.
 
 Done! If you don't like it, Command-z to undo it and try again.
+
+##ENTERING SPECIAL CHARACTERS
+
+Vim has a special system for entering special characters. It's called "digraph". If using the same special characters over and over again and don't want to copy/paste them from elsewhere, look up the digraph (2 keyboard character) command for the mark and use that instead. Since everything is UTF-8 now, there's no need to mess around with HTML entities for most of these things. (Still need entities for &amp; and &lt; and &gt; though.)
+
+1) In NORMAL mode, type `:digraphs` and hit `<enter>`.
+
+2) Page through the screens and find the symbols of interest. They will be preceded by a 2-character code and followed by a 3 digit number. For example: `'0 ˚  730` is the degree symbol.
+
+3) Quit out of that screen now that you know the 2-character code you need.
+
+4) Enter the symbol or special character of interest by typing <ctrl-k> {code 1} {code 2} from INSERT mode.
+
+Here are my favorites to memorize:
+
+'0 -> ˚  (degree symbol)
+'9 -> ’ ... "6 -> “ ... "9 -> ”  (curly quotation marks for nicer looking web documents)
+14 -> ¼ ... and similar for all fractions from halves up to 78 -> ⅞
