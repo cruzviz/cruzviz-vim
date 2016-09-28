@@ -82,6 +82,8 @@ Vim has a special system for entering special characters. It's called "digraph".
 
 Here are my favorites to memorize:
 
-'0 -> ˚  (degree symbol)
-'9 -> ’ ... "6 -> “ ... "9 -> ”  (curly quotation marks for nicer looking web documents)
-14 -> ¼ ... and similar for all fractions from halves up to 78 -> ⅞
+* '0 -> ˚  (degree symbol)
+
+* '9 -> ’ ... "6 -> “ ... "9 -> ”  (curly quotation marks for nicer looking web documents)
+
+* 14 -> ¼ ... and similar for all fractions from halves up to 78 -> ⅞
