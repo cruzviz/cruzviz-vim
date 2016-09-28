@@ -74,7 +74,7 @@ Vim has a special system for entering special characters. It's called "digraph".
 
 1) In NORMAL mode, type `:digraphs` and hit `<enter>`.
 
-2) Page through the screens and find the symbols of interest. They will be preceded by a 2-character code and followed by a 3 digit number. For example: `'DG ˚  176` is the degree symbol.
+2) Page through the screens and find the symbols of interest. They will be preceded by a 2-character code and followed by a 3 digit number. For example: `DG ˚  176` is the degree symbol.
 
 3) Quit out of that screen now that you know the 2-character code you need.
 
