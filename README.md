@@ -74,15 +74,17 @@ Vim has a special system for entering special characters. It's called "digraph".
 
 1) In NORMAL mode, type `:digraphs` and hit `<enter>`.
 
-2) Page through the screens and find the symbols of interest. They will be preceded by a 2-character code and followed by a 3 digit number. For example: `'0 ˚  730` is the degree symbol.
+2) Page through the screens and find the symbols of interest. They will be preceded by a 2-character code and followed by a 3 digit number. For example: `'DG ˚  176` is the degree symbol.
 
 3) Quit out of that screen now that you know the 2-character code you need.
 
-4) Enter the symbol or special character of interest by typing `<ctrl-k>{code 1}{code 2}` from INSERT mode. For example, to type a degree symbol, there's no need to break your flow of typing in insert mode. Just hit `<ctrl-k>'0` and keep going.
+4) Enter the symbol or special character of interest by typing `<ctrl-k>{code 1}{code 2}` from INSERT mode. For example, to type a degree symbol, there's no need to break your flow of typing in insert mode. Just hit `<ctrl-k>DG` and keep going.
+
+5) ALTERNATIVE APPROACH FOR THE LAZY: type `<ctrk-k>{something}{something}` where you are just guessing at the code but it seems like it might work. Perhaps it works! A lot of these are pretty intuitive!
 
 Here are my favorites to memorize:
 
-* '0 -> ˚  (degree symbol)
+* DG -> ˚  (degree symbol)
 
 * '9 -> ’ ... "6 -> “ ... "9 -> ”  (curly quotation marks for nicer looking web documents)
 
