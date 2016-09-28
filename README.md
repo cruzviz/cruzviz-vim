@@ -11,9 +11,9 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
 
 1) When you first open Vim, it is in NORMAL mode, with a fat cursor that covers a whole character space. This is actually a command mode where you can skip your cursor around easily, save (write) the file, and generally perform various tricks. Hit `<esc>` (the Escape key) to enter NORMAL mode from any other mode, or to cancel any partially constructed NORMAL mode command.
 
-2) INSERT mode is what some of us might consider "normal" word processing mode: there is a skinny cursor in between subsequent character spaces, and you type on the keyboard to add text to the file. From NORMAL mode, you can enter INSERT mode by typing `i` ('i'nsert) to place the skinny cursor just to the left of the NORMAL fat cursor, or `a` ('a'ppend) to place the skinny cursor to the right.
+2) INSERT mode is what some of us might consider "normal" word processing mode: there is a skinny cursor in between subsequent character spaces, and you type on the keyboard to add text to the file. From NORMAL mode, you can enter INSERT mode by typing `i` (insert) to place the skinny cursor just to the left of the NORMAL fat cursor, or `a` (append) to place the skinny cursor to the right.
 
-3) VISUAL mode is for selecting text. From NORMAL mode, type `v` ('v'isual) to enter VISUAL mode, with your current location as the starting point. Once you hit `v` and start moving the cursor around, you are highlighting everything in between the starting point and the cursor.
+3) VISUAL mode is for selecting text. From NORMAL mode, type `v` (visual) to enter VISUAL mode, with your current location as the starting point. Once you hit `v` and start moving the cursor around, you are highlighting everything in between the starting point and the cursor.
 
 ## Initial set-up
 * Install a GUI version of Vim: gVim for Windows or Linux, MacVim for Mac. I use MacVim, which is `mvim` from the terminal. (gVim is called `gvim` at the terminal.)
@@ -38,9 +38,9 @@ Vim has 3 main "modes" - NORMAL, INSERT, and VISUAL.
   * `W`/`w` jumps to next word, `B`/`b` jumps 'b'ack to previous word
   * `{line number}G` jumps ('G'Os) to a specific line number, or `G` by itself goes to end of file
 
-4) Delete a whole line with `dd` or 'd'elete multiple lines at once with `d{x}<return>` where {x} is the number of lines to delete.
+4) Delete a whole line with `dd` or delete multiple lines at once with `d{x}<return>` where {x} is the number of lines to delete.
 
-5) `r{new character}` 'r'eplaces a single character. It overwrites the character underneath the cursor with the {new character}.
+5) `r{new character}` replaces a single character. It overwrites the character underneath the cursor with the {new character}.
 
 ##VISUAL mode:
 
@@ -70,7 +70,7 @@ Done! If you don't like it, Command-z to undo it and try again.
 
 ##ENTERING SPECIAL CHARACTERS
 
-Vim has a special system for entering special characters. It's called "digraph". If using the same special characters over and over again and don't want to copy/paste them from elsewhere, look up the digraph (2 keyboard character) command for the mark and use that instead. Since everything is UTF-8 now, there's no need to mess around with HTML entities for most of these things. (Still need entities for &amp; and &lt; and &gt; though.)
+Vim has a special system for entering special characters. It's called "digraph". If using the same special characters over and over again and don't want to copy/paste them from elsewhere, look up the digraph (2 keyboard character) command for the mark and use that instead. Since everything is UTF-8 now, there's no need to mess around with HTML entities for most of these things. (Still need entities for `&amp;` and `&lt;` and `&gt;` though.)
 
 1) In NORMAL mode, type `:digraphs` and hit `<enter>`.
 
@@ -78,7 +78,7 @@ Vim has a special system for entering special characters. It's called "digraph".
 
 3) Quit out of that screen now that you know the 2-character code you need.
 
-4) Enter the symbol or special character of interest by typing <ctrl-k> {code 1} {code 2} from INSERT mode.
+4) Enter the symbol or special character of interest by typing `<ctrl-k>{code 1}{code 2}` from INSERT mode. For example, to type a degree symbol, there's no need to break your flow of typing in insert mode. Just hit `<ctrl-k>'0` and keep going.
 
 Here are my favorites to memorize:
 
