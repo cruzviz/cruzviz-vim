@@ -64,7 +64,7 @@ To implement inside Vim:
 
 2) Then hit `<esc>`, the Escape key, to enter NORMAL mode.
 
-3) Make sure the cursor is covering the last character of your Emmet shortcut. Then hit `<tab>`, the Tab key.
+3) Make sure the cursor is at the end of the line with no blank spaces after it, and that the cursor is at the last character of your Emmet shortcut. Then hit `<tab>`, the Tab key.
 
 Done! If you don't like it, Command-z to undo it and try again.
 
